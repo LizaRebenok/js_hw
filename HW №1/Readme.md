@@ -1,4 +1,4 @@
-Homework description
+# Homework description
 
 Треба реалізувати просту програму з наступними умовами:
 
