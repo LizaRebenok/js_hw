@@ -1,4 +1,5 @@
-`Use strict`
+'Use strict';
+
 
 // Task #1
 
