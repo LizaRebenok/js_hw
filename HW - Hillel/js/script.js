@@ -10,5 +10,4 @@ const checkNum3 = isNaN(thirdNumber) ? Number(prompt(`Помилка! Введі
 
 const arithmeticMean = (( checkNum1 || firstNumber) + (checkNum2 || secondNumber) + ( checkNum3 || thirdNumber)) / 3;
 
-console.log(arithmeticMean);
 alert(`Середнє арифметичне введених чисел: ${arithmeticMean}.`);
