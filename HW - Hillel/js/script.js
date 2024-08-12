@@ -14,5 +14,5 @@ switch (true){
         console.log('number is Ba_NaN');
         break;
     default:
-        console.log('OK!')
+        console.log('OK!');
 }
