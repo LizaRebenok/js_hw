@@ -28,7 +28,6 @@ while (i <= 100) {
 console.log(resultSquared);
 
 // Task - 4.
-
 if (num <= 1) {
   console.log(`${num} не є простим числом.`);
 } else {
