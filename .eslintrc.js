@@ -5,5 +5,8 @@ module.exports = {
     'no-undef': 'off',
     'no-alert': 'off',
     'no-console': 'off',
+    'no-plusplus': 'off',
+    'no-unused-expressions': 'off',
+    'no-unused-vars': 'off',
   },
 };
