@@ -12,6 +12,7 @@ console.log(getFactorial(3));
 // Task 2
 const num = Number(prompt('Введіть число, яке потрібно звести в ступінь.'));
 const degree = Number(prompt('Введіть ступінь числа.'));
+
 const pow = (num, degree) => {
   if (degree === 0) {
     return 1;
