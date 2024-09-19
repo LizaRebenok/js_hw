@@ -8,5 +8,4 @@ const factorialNum = (num) => {
   }
   return num * factorialNum(num - 1);
 };
-
 console.log(factorialNum(3));
