@@ -1,11 +1,11 @@
 `Use strict`;
 
 // Task 1
-const getFactorial = (num) => {
-  if (num === 0) {
+const getFactorial = (number) => {
+  if (number === 0) {
     return 1;
   }
-  return num * getFactorial(num - 1);
+  return number * getFactorial(number - 1);
 };
 console.log(getFactorial(3));
 
@@ -24,3 +24,10 @@ const resultPow = pow(num, degree);
 console.log(`Результат: ${num}^${degree} = ${resultPow}.`);
 
 // Task 3
+const sum = (a, b) => {
+  if (a === 0) {
+    return b;
+  }
+  return sum(a - 1, b + 1);
+};
+console.log(sum(4, 6));
