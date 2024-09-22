@@ -12,7 +12,6 @@ const insertWordInto = (str) => {
     const arrayStr = str.split(` `);
     arrayStr.splice(iteration, 0, word);
 
-
     iteration = (iteration + 1) % arrayStr.length;
 
     return arrayStr.join(` `);
