@@ -5,12 +5,12 @@ const counter = () => {
 
     return (...args) => {
         if (args.length !== 1) {
-            throw new Error(`Функція приймає тільки один аргумент.`);
+            throw new Error(`Function accepts only 1 argument, too much arguments provided.`);
         }
 
         const num = args[0];
         if (typeof num !== 'number') {
-            throw new Error(`Фунція приймає в якості аргумента тільки число.`)
+            throw new Error(`Function accepts only numbers as an argument`)
         }
         count += num;
         return count;
