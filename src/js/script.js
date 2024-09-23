@@ -10,6 +10,7 @@ const simpleArray = [13, 4885, 43.4, 665, 99];
 
 
 const arrayCorrection = () => {
+
   const flat = (arr, result = []) => {
     arr.forEach(item => {
         if (Array.isArray(item)) { //перевірка чи є елемент масивом.
