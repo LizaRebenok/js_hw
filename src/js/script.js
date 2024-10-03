@@ -6,31 +6,24 @@ const appendElement = (parentElement = null, element = null) => {
 };
 
 const createTable = () => {
-  const countColumn = 10;
+  const tableSize = 10;
+
   const table = document.createElement('table');
   table.className = 'table table-striped';
   const tbody = document.createElement('tbody');
   table.append(tbody);
 
-  let row = 0;
-
-  const interval = setInterval(() => { // створення ідентифікатору interval, для повернення setInterval
-    if (row >= countColumn) {
-      clearInterval(interval); // зупинка виконання, якщо row буде дорівнювати tableSize.
-      return;
-    }
-
+  let count = 1;
+  for (let i = 0; i < tableSize; i++) {
     const tr = document.createElement('tr');
 
-    for (let i = 1; i <= countColumn; i++) {
+    for (let j = 0; j < tableSize; j++) {
       const td = document.createElement('td');
-      td.innerHTML = `${row * countColumn + i}`;
+      td.innerHTML = count++;
       tr.append(td);
     }
-
     tbody.append(tr);
-    row++;
-  }, 1000);
+  }
 
   return table;
 };
