@@ -18,7 +18,6 @@ const deleteDiv = () => {
 textField.onmouseover = () => {
   createDiv();
 };
-
 textField.onmouseout = () => {
   deleteDiv();
 };
