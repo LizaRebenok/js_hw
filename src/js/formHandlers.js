@@ -45,4 +45,5 @@ const getFormHandlers = (...args) => {
     inputHandler,
   };
 };
+
 export default getFormHandlers;
