@@ -19,17 +19,10 @@ const getFormHandlers = (...args) => {
     if (isFormSubmitDisabled) return;
 
     const data = {};
-    let allFieldsFilled = true;
 
     inputs.forEach((input) => {
       data[input.name] = input.value.trim();
-
-      if (!data[input.name]) {
-        allFieldsFilled = false;
-      }
     });
-
-    if (!allFieldsFilled) throw new Error('Not all fields are filled in');
 
     handleFormData({ data, event });
   };
