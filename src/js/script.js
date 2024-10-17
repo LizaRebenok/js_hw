@@ -8,9 +8,9 @@ import { prependElement } from './addElementToHTML.js';
   const form = document.querySelector('[data-todo-form]');
   const todoItemsWrapper = document.querySelector('#todoItems');
 
-  const handleFormData = ({ data, event }) => {
+  const handleFormData = ({ formData, event }) => {
     event.target.reset();
-    const todoItemElement = createTodoItem(data);
+    const todoItemElement = createTodoItem(formData);
     prependElement(todoItemsWrapper, todoItemElement);
   };
 

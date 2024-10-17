@@ -9,8 +9,11 @@
 .taskHeading {
   font-size: 20px;
   margin-bottom: 15px;
+  color: white;
+  border-bottom: 1px solid white;
 }
 
 .taskDescription {
   font-size: 16px;
+  color: aliceblue;
 }
