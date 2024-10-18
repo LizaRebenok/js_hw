@@ -10,10 +10,8 @@ import { prependElement } from './addElementToHTML.js';
 
   const saveTask = (data) => {
     const saveDataForTask = JSON.parse(localStorage.getItem('tasks')) || [];
-
     saveDataForTask.push(data);
     localStorage.setItem('tasks', JSON.stringify(saveDataForTask));
-    console.log(saveDataForTask);
   };
 
   const handleFormData = ({ formData, event }) => {
