@@ -1,11 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-<script src="js/script.js"></script>
-</body>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <form id="postForm" class="form-find">
+        <div class="mb-3">
+          <label for="postId" class="form-label"
+            >Введіть ID поста (від 1 до 100)</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="postId"
+            min="1"
+            max="100"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Знайти</button>
+      </form>
+
+      <div class="mt-4 post-block">
+        <h3 class="post-title"></h3>
+        <p class="post-body"></p>
+        <button id="commentsButton" class="btn btn-secondary">
+          Показати коментарі
+        </button>
+        <div id="commentsBlock" class="comment-content"></div>
+      </div>
+    </main>
+
+    <script src="js/app.js" type="module"></script>
+  </body>
 </html>
