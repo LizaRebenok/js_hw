@@ -1,6 +1,8 @@
 const weatherBlock = document.querySelector('#weather');
 
-const urlWeather = 'https://api.openweathermap.org/data/2.5/weather?q=DNIPRO&units=metric&APPID=5d066958a60d315387d9492393935c19';
+const API_KAY = '5d066958a60d315387d9492393935c19';
+const CITY_NAME = 'DNIPRO';
+const urlWeather = `https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=metric&APPID=${API_KAY}`;
 
 const fetchData = async (url) => {
   try {
